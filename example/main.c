@@ -28,14 +28,13 @@ int main() {
 		printf("Success! PSID matches!\n");
 		printf("\nAuto-exiting in 5 seconds...");
 		sceKernelDelayThread(5 * 1000 * 1000);
-		sceKernelExitProcess(0);
 	}
 	else {
 		printf("PSID does NOT match!\n");
 		printf("\nAuto-exiting in 5 seconds...");
 		sceKernelDelayThread(5 * 1000 * 1000);
-		sceKernelExitProcess(0);
 	}
 
+	sceKernelExitProcess(0);
 	return 0;
 }
